@@ -1,4 +1,4 @@
 [
-  { "name": "sigma-flashcards", "description": "Flashcard Saving and Quizzing" },
-  { "name": "Stoopid-Game", "description": "Apparently it's very stoopid" }
+  { "name": "Flashcard Learner", "description": "Learn long definitions with online flashcards", "path": "sigma-flashcards" },
+  { "name": "Stoopid Game", "description": "Apparently it's very stoopid", "path": "stoopid-game" }
 ]

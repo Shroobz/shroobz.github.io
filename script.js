@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.innerHTML = `
           <h2>${folder.name}</h2>
           <p>${folder.description}</p>
-          <a href="${folder.name}/"">Visit →</a>
+          <a href="${folder.path}/"">Visit →</a>
         `;
 
         container.appendChild(card);

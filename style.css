@@ -3,7 +3,7 @@ body.page-body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #d0e9ff, #e7d1ff, #ffe4f0);
+  background: linear-gradient(105deg, #40464b, #3c383f, #383737);
   color: #333;
   min-height: 100vh;
   display: flex;
@@ -24,35 +24,35 @@ body.page-body {
   font-weight: 800;
   text-align: center;
   margin-bottom: 50px;
-  color: #222;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  color: #1a1717;
 }
 
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
+  gap: 32px;
 }
 
 
 .card {
-  background: rgba(255, 255, 255, 0.35);
+  background: rgba(112, 112, 112, 0.35);
   border: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
   padding: 24px;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, scale 0.3s ease, background 0.3s ease;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInUp 0.5s ease-out forwards;
+  animation: fadeInUp 0.5s cubic-bezier(0.5, 0, 0.5, 1) forwards;
 }
 
 .card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  scale: 1.03;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   cursor: pointer;
+  background: rgba(112, 112, 112, 0.55);
 }
 
 .card h2 {
@@ -65,7 +65,7 @@ body.page-body {
 
 .card p {
   font-size: 0.95rem;
-  color: #555;
+  color: #888888;
   margin-bottom: 14px;
 }
 
